@@ -17,7 +17,8 @@
             --font1: 'Montserrat', black;
             --font2: 'Montserrat', semibold;
             --color1: #000000;
-            --color2: #ffff
+            --color2: #ffff;
+            --color3: #0a2ff1;
         }
 
 
@@ -26,8 +27,18 @@
             text-align: center;
         }
 
+        .cabeza {
+            height: 50px;
+            background-color: var(--color3);
+        }
+
+        .pie {
+            height: 100px;
+            background-color: var(--color3);
+        }
+
         #div1 {
-            background-color: var(--color1);
+            background-color: var(--color2);
             height: 150px;
             padding-top: 50px;
         }
@@ -35,28 +46,29 @@
         #div1 h1 {
             font-family: var(--font1);
             font-size: 50pt;
-            color: var(--color2);
+            color: var(--color3);
         }
 
         #div2 {
-            background-color: var(--color2);
+            background-color: var(--color1);
         }
         #div2 h2 {
             font-family: var(--font1);
             font-size: 148pt;
+            color: var(--color2);
         }
 
         #div3 {
-            background-color: var(--color1);
+            background-color: var(--color2);
             padding: 200px 0px
 
 
         }
 
         #div3 h3 {
-            font-family: var(--font2);
+            font-family: var(--font1);
             font-size: 163pt;
-            color: var(--color2);
+            color: var(--color1);
 
         }
 
@@ -67,21 +79,30 @@
         
         #div4 .pdesc {
             font-size: 45pt;
-            color: var(--color1)
+            color: var(--color3)
         }
 
-        #div4 p .span1{
-            font-family: var(--font1);
-        }
-
-        #div4 p .span2 {
+        #div4 p .span1 {
             font-family: var(--font-base);
         }
 
-        #div5 {
+        #div4 .strong1 {
+            font-family: var(--font1);
+            color: var(--color3);
+
+        }
+
+        #div4 strong {
+            color: var(--color2);
+        }
+        #div4 mark {
             background-color: var(--color1);
+        }
+
+        #div5 {
+            background-color: var(--color2);
             padding: 100px 0px;
-            color: white;
+            color: var(--color3);
         }
 
         #div5 p {
@@ -93,6 +114,9 @@
 </head>
 <body>
     <div id="divpadre">
+        <div class="cabeza">
+
+        </div>
         <div id="div1">
             <h1>23 NOVIEMBRE</h1>
         </div>
@@ -106,7 +130,10 @@
         </div>
         <div id="div4">
                 <p class="pdesc">
-                    <span class="span1">DESCUENTOS</span> <span>DE HASTA EL</span> <span class="span1">50%</span>
+                    <span class="span1">
+                        <strong class="strong1">DESCUENTOS</strong> 
+                        <span>DE HASTA EL</span> <mark><strong>50%</strong></mark>
+                    </span>
                 </p>
 
         </div>
@@ -114,6 +141,9 @@
             <p>
                 ¡NO TE LO PIERDAS!
             </p>
+        </div>
+        <div class="pie">
+            
         </div>
     </div>
 </body>
